@@ -41,3 +41,10 @@ img {
   text-transform: uppercase;
   color: white;
 }
+
+.jumbotron {
+  background-image: url(../images/jumbotron.jpg);
+  padding: 200px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

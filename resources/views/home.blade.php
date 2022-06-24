@@ -5,7 +5,8 @@
 @endsection
 
 @section('main_content')
-    <h2>Comics</h2>
+
+    @include('components.jumbotron')
 
     @include('components.comics-section', $comics_array)
     
