@@ -5,5 +5,13 @@
 @endsection
 
 @section('main_content')
-    <h2>Main content</h2>
+    <h2>Comics</h2>
+
+    <div>
+        @foreach ($comics_array as $comic)
+            <div class="comic-card">
+                <img src="{{ $comic['thumb'] }}" alt="">
+            </div>
+        @endforeach
+    </div>
 @endsection
