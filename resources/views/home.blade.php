@@ -7,11 +7,5 @@
 @section('main_content')
     <h2>Comics</h2>
 
-    <div>
-        @foreach ($comics_array as $comic)
-            <div class="comic-card">
-                <img src="{{ $comic['thumb'] }}" alt="">
-            </div>
-        @endforeach
-    </div>
+    @include('components.comics-section', $comics_array)
 @endsection
