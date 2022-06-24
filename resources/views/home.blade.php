@@ -8,4 +8,5 @@
     <h2>Comics</h2>
 
     @include('components.comics-section', $comics_array)
+    
 @endsection
