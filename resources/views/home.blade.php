@@ -9,5 +9,7 @@
     @include('components.jumbotron')
 
     @include('components.comics-section', $comics_array)
+
+    @include('components.blue-line')
     
 @endsection
