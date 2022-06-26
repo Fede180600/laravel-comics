@@ -1,0 +1,83 @@
+header {
+    height: 120px;
+    .header-top {
+        height: 20%;
+        background-color: #0282f9;
+        div {
+            width: 70%;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            text-transform: uppercase;
+            color: white;
+            font-size: .7rem;
+            font-weight: 600;
+            span {
+                margin-right: 50px;
+            }
+            select {
+                border: none;
+                background-color: #0282f9;
+                outline: none;
+                text-transform: inherit;
+                color: inherit;
+                font-size: inherit;
+                font-weight: inherit;
+            }
+        }
+    }
+
+    .header-bottom {
+        height: 90%;
+        .container {
+            width: 70%;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo-img {
+                width: 5%;
+            }
+            nav {
+                ul {
+                    display: flex;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: .9rem;
+                    color: #464646;
+                    li {
+                        margin: 0 15px;
+                        line-height: 80px;
+                        border-bottom: 5px solid transparent;
+                        &.active {
+                            color: #0282f9;
+                            border-bottom: 5px solid #0282f9;
+                        }
+                    }
+                    li:hover {
+                        color: #0282f9;
+                            border-bottom: 5px solid #0282f9;
+                    }
+                }
+            }
+            .search-box {
+                width: 10%;
+                input {
+                    padding-bottom: 5px;
+                    outline: none;
+                    border: none;
+                    font-weight: 600;
+                    font-size: .9rem;
+                    text-align: right;
+                    border-bottom: 2px solid #0282f9;
+                }
+                input::placeholder {
+                    color: #464646;
+                }
+            }
+        }
+    }
+}
