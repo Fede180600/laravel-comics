@@ -16,6 +16,11 @@ ul {
   list-style: none;
 }
 
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
 .comics-box {
   background-color: #1c1c1c;
   padding: 30px 0;
@@ -168,4 +173,66 @@ header .header-bottom .container .search-box input::-moz-placeholder {
 }
 header .header-bottom .container .search-box input::placeholder {
   color: #464646;
+}
+
+footer {
+  height: 600px;
+  background-color: #303030;
+}
+footer .footer-top {
+  height: 500px;
+  background-image: url(../images/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+footer .footer-top .col-text {
+  width: 55%;
+}
+footer .footer-top .col-logo {
+  width: 35%;
+}
+footer .footer-bottom {
+  height: 100px;
+}
+footer .footer-bottom .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-bottom .container .btn-box {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+footer .footer-bottom .container .btn-box button {
+  padding: 10px;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #0282f9;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+footer .footer-bottom .container .btn-box button:hover {
+  background-color: #0282f9;
+  border-color: white;
+  color: black;
+}
+footer .footer-bottom .container ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+footer .footer-bottom .container ul h2 {
+  margin-right: 20px;
+  text-transform: uppercase;
+  color: #0282f9;
+  font-size: 1rem;
+}
+footer .footer-bottom .container ul li {
+  width: 25px;
+  margin: 5px;
 }
