@@ -257,6 +257,76 @@ footer .footer-bottom .container ul li {
   position: absolute;
   bottom: 20px;
 }
+.comic-section .overview-box {
+  padding: 50px 0;
+}
+.comic-section .overview-box .container {
+  display: flex;
+  justify-content: space-between;
+}
+.comic-section .overview-box .container .col-left {
+  width: 60%;
+}
+.comic-section .overview-box .container .col-left h2 {
+  text-transform: uppercase;
+  color: #00375f;
+  margin-bottom: 20px;
+}
+.comic-section .overview-box .container .col-left .price-box {
+  padding: 0 30px;
+  height: 50px;
+  background-color: #55ba59;
+  margin-bottom: 20px;
+  color: #b9fd9b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.comic-section .overview-box .container .col-left .price-box div:first-child {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 30px;
+}
+.comic-section .overview-box .container .col-left .price-box div:first-child p {
+  text-transform: uppercase;
+}
+.comic-section .overview-box .container .col-left .price-box div:last-child {
+  border-left: 1px solid black;
+  height: 100%;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+}
+.comic-section .overview-box .container .col-left .price-box select {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.comic-section .overview-box .container .col-left .price-box span {
+  color: white;
+}
+.comic-section .overview-box .container .col-left p.description {
+  line-height: 25px;
+  font-size: 0.8rem;
+  color: rgba(23, 23, 23, 0.811);
+  font-weight: 600;
+}
+.comic-section .overview-box .container .col-right {
+  width: 30%;
+}
+.comic-section .overview-box .container .col-right h4 {
+  text-align: right;
+  text-transform: uppercase;
+  color: rgba(40, 42, 53, 0.776);
+  margin-bottom: 5px;
+}
 .comic-section .info-box {
   background-color: #f0f0f0;
   height: 40vh;

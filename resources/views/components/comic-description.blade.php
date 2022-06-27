@@ -6,13 +6,27 @@
     </div>
     <div class="overview-box">
         <div class="container">
-            <h2>{{ $comic['title'] }}</h2>
-            <div class="price-box">
-                {{ $comic['price'] }}
+            <div class="col-left">
+                <h2>{{ $comic['title'] }}</h2>
+                <div class="price-box">
+                    <div>
+                        <p>U.S. Price: <span>{{ $comic['price'] }}</span></p>
+                        <p>avalaible</p>
+                    </div>
+                    <div>
+                        <select>
+                            <option value=""><span>Check Availability</span></option>
+                        </select>
+                    </div>
+                </div>
+                <p class="description">
+                    {{ $comic['description'] }}
+                </p>
             </div>
-            <p>
-                {{ $comic['description'] }}
-            </p>
+            <div class="col-right">
+                <h4>advertisement</h4>
+                <img src="../images/adv.jpg" alt="">
+            </div>
         </div>
     </div>
     <div class="info-box">
