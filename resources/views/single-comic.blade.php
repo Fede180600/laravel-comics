@@ -8,4 +8,5 @@
 
     @include('components.jumbotron')
 
+    @include('components.comic-description', $comics_array)
 @endsection

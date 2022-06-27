@@ -45,4 +45,4 @@ Route::get('/comics', function() use($data) {
 
 Route::get('/single-comic', function () use ($data) {
     return view('single-comic', $data);
-})->name('single-comic');
+})->name('single-comic', $data);
