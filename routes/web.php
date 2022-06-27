@@ -43,6 +43,11 @@ Route::get('/comics', function() use($data) {
     return view('comics', $data);
 })->name('comics');
 
-Route::get('/single-comic', function () use ($data) {
+Route::get('/comics/{id}', function ($id) use ($data) {
+    $comic = collect(config('comics'));
+    $current_comic = $comic->where('id', $id)->first();
+    $data = array_merge($data, [
+        'comic' => $current_comic
+    ]);
     return view('single-comic', $data);
 })->name('single-comic', $data);
