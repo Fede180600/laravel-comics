@@ -10,12 +10,16 @@
     <div class="header-bottom">
         <div class="container">
             <div class="logo-img">
-                <img src="../images/dc-logo.png" alt="">
+                <a href="{{ route('home') }}">
+                    <img src="../images/dc-logo.png" alt="">
+                </a>
             </div>
             <nav>
                 <ul>
                     <li>characheters</li>
-                    <li class="active">comics</li>
+                    <li class="active">
+                        <a href="{{ route('comics') }}">comics</a>
+                    </li>
                     <li>movies</li>
                     <li>tv</li>
                     <li>games</li>

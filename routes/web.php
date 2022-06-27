@@ -39,6 +39,10 @@ Route::get('/', function () use ($data) {
     return view('home', $data);
 })->name('home');
 
+Route::get('/comics', function() use($data) {
+    return view('comics', $data);
+})->name('comics');
+
 Route::get('/single-comic', function () use ($data) {
     return view('single-comic', $data);
 })->name('single-comic');

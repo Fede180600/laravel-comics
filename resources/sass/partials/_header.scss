@@ -52,6 +52,10 @@ header {
                         margin: 0 15px;
                         line-height: 80px;
                         border-bottom: 5px solid transparent;
+                        a {
+                            color: inherit;
+                            text-decoration: none;
+                        }
                         &.active {
                             color: #0282f9;
                             border-bottom: 5px solid #0282f9;
