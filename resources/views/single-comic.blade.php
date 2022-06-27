@@ -8,6 +8,4 @@
 
     @include('components.jumbotron')
 
-    @include('components.blue-line')
-
 @endsection
