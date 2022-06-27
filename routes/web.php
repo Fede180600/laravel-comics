@@ -13,27 +13,32 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $comics_array = config('comics');
-    $data = [
-        'comics_array' => $comics_array,
-        'socials_array' => [
-            [
-                'icon_url' => '../images/footer-facebook.png'
-            ],
-            [
-                'icon_url' => '../images/footer-periscope.png'
-            ],
-            [
-                'icon_url' => '../images/footer-pinterest.png'
-            ],
-            [
-                'icon_url' => '../images/footer-twitter.png'
-            ],
-            [
-                'icon_url' => '../images/footer-youtube.png'
-            ]
-            ],
-    ];
+$comics_array = config('comics');
+$data = [
+    'comics_array' => $comics_array,
+    'socials_array' => [
+        [
+            'icon_url' => '../images/footer-facebook.png'
+        ],
+        [
+            'icon_url' => '../images/footer-periscope.png'
+        ],
+        [
+            'icon_url' => '../images/footer-pinterest.png'
+        ],
+        [
+            'icon_url' => '../images/footer-twitter.png'
+        ],
+        [
+            'icon_url' => '../images/footer-youtube.png'
+        ]
+    ],
+];
+
+Route::get('/', function () use ($data) {
     return view('home', $data);
 })->name('home');
+
+Route::get('/single-comic', function () use ($data) {
+    return view('single-comic', $data);
+})->name('single-comic');
