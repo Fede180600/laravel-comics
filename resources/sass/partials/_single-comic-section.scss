@@ -1,5 +1,5 @@
 .comic-section {
-    height: 80vh;
+    // height: 80vh;
     .blue-line {
         height: 8vh;
         position: relative;
@@ -23,7 +23,6 @@
                     margin-bottom: 20px;
                 }
                 .price-box {
-                    padding: 0 30px;
                     height: 50px;
                     background-color: #55ba59;
                     margin-bottom: 20px;
@@ -38,7 +37,7 @@
                         display: flex;
                         justify-content: space-between;
                         width: 100%;
-                        padding-right: 30px;
+                        padding: 0 30px;
                         p {
                             text-transform: uppercase;
                         }
@@ -46,7 +45,7 @@
                     div:last-child {
                         border-left: 1px solid black;
                         height: 100%;
-                        padding-left: 30px;
+                        padding: 0 30px;
                         display: flex;
                         align-items: center;
                     }
@@ -83,8 +82,50 @@
 
     .info-box {
         background-color: #f0f0f0;
-        height: 40vh;
         border-top: 2px solid #e2e2e2;
         margin-top: 10px;
+        padding: 40px 0;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            h3 {
+                padding-bottom: 25px;
+                border-bottom: 2px solid #e2e2e2;
+                color: #00375f;
+            }
+            .col-left {
+                width: 48%;
+                div {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: .8rem;
+                    padding: 20px 0;
+                    color: #21a9dc;
+                    font-weight: 600;
+                    border-bottom: 2px solid #e2e2e2;
+                    span {
+                        font-size: 1rem;
+                        min-width: 40%;
+                        color: #00375f;
+                    }
+                }
+            }
+            .col-right{
+                width: 48%;
+                div {
+                    display: flex;
+                    line-height: 2.5rem;
+                    border-bottom: 2px solid #e2e2e2;
+                    color: rgba(23, 23, 23, 0.811);
+                    font-size: .9rem;
+                    font-weight: 600;
+                    p {
+                        min-width: 40%;
+                        color:#00375f;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
     }
 }

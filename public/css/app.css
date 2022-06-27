@@ -245,9 +245,6 @@ footer .footer-bottom .container ul li {
   margin: 5px;
 }
 
-.comic-section {
-  height: 80vh;
-}
 .comic-section .blue-line {
   height: 8vh;
   position: relative;
@@ -273,7 +270,6 @@ footer .footer-bottom .container ul li {
   margin-bottom: 20px;
 }
 .comic-section .overview-box .container .col-left .price-box {
-  padding: 0 30px;
   height: 50px;
   background-color: #55ba59;
   margin-bottom: 20px;
@@ -289,7 +285,7 @@ footer .footer-bottom .container ul li {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding-right: 30px;
+  padding: 0 30px;
 }
 .comic-section .overview-box .container .col-left .price-box div:first-child p {
   text-transform: uppercase;
@@ -297,7 +293,7 @@ footer .footer-bottom .container ul li {
 .comic-section .overview-box .container .col-left .price-box div:last-child {
   border-left: 1px solid black;
   height: 100%;
-  padding-left: 30px;
+  padding: 0 30px;
   display: flex;
   align-items: center;
 }
@@ -329,7 +325,49 @@ footer .footer-bottom .container ul li {
 }
 .comic-section .info-box {
   background-color: #f0f0f0;
-  height: 40vh;
   border-top: 2px solid #e2e2e2;
   margin-top: 10px;
+  padding: 40px 0;
+}
+.comic-section .info-box .container {
+  display: flex;
+  justify-content: space-between;
+}
+.comic-section .info-box .container h3 {
+  padding-bottom: 25px;
+  border-bottom: 2px solid #e2e2e2;
+  color: #00375f;
+}
+.comic-section .info-box .container .col-left {
+  width: 48%;
+}
+.comic-section .info-box .container .col-left div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  padding: 20px 0;
+  color: #21a9dc;
+  font-weight: 600;
+  border-bottom: 2px solid #e2e2e2;
+}
+.comic-section .info-box .container .col-left div span {
+  font-size: 1rem;
+  min-width: 40%;
+  color: #00375f;
+}
+.comic-section .info-box .container .col-right {
+  width: 48%;
+}
+.comic-section .info-box .container .col-right div {
+  display: flex;
+  line-height: 2.5rem;
+  border-bottom: 2px solid #e2e2e2;
+  color: rgba(23, 23, 23, 0.811);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.comic-section .info-box .container .col-right div p {
+  min-width: 40%;
+  color: #00375f;
+  font-size: 1rem;
 }
